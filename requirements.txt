@@ -4,11 +4,3 @@ os
 argparse
 codecs
 re
-lxml.html
-re
-requests
-lxml
-config
-os
-argparse
-codecs
