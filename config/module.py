@@ -36,7 +36,7 @@ def parse_site(subdomains):
                 try:
                     r = requests.get('https://{s}'.format(s=sub), timeout=(5,5))
                     dom = lxml.html.fromstring(r.content)
-                    links.append('{s}'.format(s=sub))
+                    links.append('https://{s}'.format(s=sub))
                     for link in dom.xpath('//script/@src'):
                         if link.startswith('https://'):
                             links.append(link)
